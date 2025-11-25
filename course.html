@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ABAC Hub – Course Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <a href="index.html" class="logo">ABAC Hub</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="sheets.html">Study Sheets</a>
+          <a href="dorms.html">Dorms</a>
+          <a href="about.html">About</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="course-header">
+          <div>
+            <span class="tag tag-blue">Course</span>
+            <h1>MSM 1131 – Business Statistics</h1>
+            <p class="card-meta">Faculty of MSM · 3 credits</p>
+          </div>
+          <div class="rating rating-large">
+            <div class="rating-label">Average rating</div>
+            <div class="rating-value">4.3</div>
+            <div class="rating-stars">★★★★☆</div>
+            <div class="rating-count">12 reviews</div>
+          </div>
+        </div>
+
+        <div class="course-layout">
+          <section class="course-main">
+            <h2>Course Overview</h2>
+            <p>
+              Business Statistics introduces students to descriptive and
+              inferential statistics commonly used in business and management.
+              Topics include data visualization, probability distributions,
+              hypothesis testing, and simple regression.
+            </p>
+
+            <h3>Summary</h3>
+            <ul class="list">
+              <li>Weekly lectures with practical examples.</li>
+              <li>Regular quizzes based on lecture notes and slides.</li>
+              <li>Midterm and final exam with both calculation and theory.</li>
+              <li>Useful for marketing, finance, and data-related careers.</li>
+            </ul>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label">Difficulty</span>
+                <span class="info-value">3 / 5</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Usefulness</span>
+                <span class="info-value">5 / 5</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Workload</span>
+                <span class="info-value">Medium</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Exam style</span>
+                <span class="info-value">Problem-solving</span>
+              </div>
+            </div>
+
+            <h2>Student Reviews</h2>
+
+            <article class="review-card">
+              <div class="review-header">
+                <span class="comment-user">P***</span>
+                <span class="rating-stars">★★★★★</span>
+              </div>
+              <p class="review-meta">Taken in Semester 1/2025</p>
+              <p>
+                Very clear explanations and the slides are easy to follow. Exams
+                are challenging but fair if you practice past papers.
+              </p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-header">
+                <span class="comment-user">M***</span>
+                <span class="rating-stars">★★★★☆</span>
+              </div>
+              <p class="review-meta">Taken in Semester 2/2024</p>
+              <p>
+                A lot of formulas to remember. Weekly quiz keeps you on track.
+                Recommend forming a small group to study together.
+              </p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-header">
+                <span class="comment-user">CJ***</span>
+                <span class="rating-stars">★★★☆☆</span>
+              </div>
+              <p class="review-meta">Taken in Summer 2024</p>
+              <p>
+                Content is useful but the pace was fast in summer. If you are
+                weak in math, give yourself extra time.
+              </p>
+            </article>
+
+            <section class="add-review">
+              <h3>Share your experience</h3>
+              <p class="muted">
+                In this frontend prototype, the review form is for display only.
+              </p>
+              <form>
+                <label class="form-label">Rating</label>
+                <div class="rating-input">★ ★ ★ ★ ★</div>
+
+                <label class="form-label" for="reviewText">Comment</label>
+                <textarea
+                  id="reviewText"
+                  class="textarea"
+                  rows="4"
+                  placeholder="Write your review here..."
+                ></textarea>
+
+                <button class="btn btn-primary" type="button" disabled>
+                  Login required to submit
+                </button>
+              </form>
+            </section>
+          </section>
+
+          <aside class="course-sidebar">
+            <h3>Related Courses</h3>
+            <ul class="sidebar-list">
+              <li><a href="course.html">MSM 1100 – Business Mathematics</a></li>
+              <li>
+                <a href="course.html">MSM 2201 – Quantitative Analysis</a>
+              </li>
+              <li>
+                <a href="course.html">CSC 1100 – Introduction to Programming</a>
+              </li>
+            </ul>
+
+            <h3>Popular Teachers for this course</h3>
+            <ul class="sidebar-list">
+              <li><a href="course.html">Dr. John Smith · ★ 4.5</a></li>
+              <li><a href="course.html">Dr. A. Brown · ★ 4.1</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2025 ABAC Hub.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

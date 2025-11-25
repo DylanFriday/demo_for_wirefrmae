@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ABAC Hub – News & Articles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <a href="index.html" class="logo">ABAC Hub</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="sheets.html">Study Sheets</a>
+          <a href="dorms.html">Dorms</a>
+          <a href="about.html">About</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <h1>News & Articles</h1>
+            <p>Browse campus updates, study tips, and student stories.</p>
+          </div>
+          <div class="page-actions">
+            <select id="newsCategoryFilter" class="select">
+              <option value="all">All categories</option>
+              <option value="registration">Registration</option>
+              <option value="exam">Exam</option>
+              <option value="study-tips">Study Tips</option>
+              <option value="life">Life</option>
+              <option value="opportunities">Opportunities</option>
+            </select>
+            <input
+              type="search"
+              class="input"
+              id="newsSearch"
+              placeholder="Search articles..."
+            />
+          </div>
+        </div>
+
+        <div class="card-grid" id="newsList">
+          <article class="card" data-category="registration">
+            <span class="tag tag-gold">Registration</span>
+            <h3>Add/Drop Period for Semester 2/2025</h3>
+            <p class="card-meta">Nov 20, 2025 · Admin</p>
+            <p class="card-text">
+              Important dates and how to avoid common add/drop mistakes.
+            </p>
+            <a href="article.html" class="link-arrow">Read more →</a>
+          </article>
+
+          <article class="card" data-category="exam">
+            <span class="tag tag-blue">Exam</span>
+            <h3>Final Exam Seating & Guidelines</h3>
+            <p class="card-meta">Nov 18, 2025 · Student Affairs</p>
+            <p class="card-text">
+              ID checks, exam room rules, and late policy explained clearly.
+            </p>
+            <a href="article.html" class="link-arrow">Read more →</a>
+          </article>
+
+          <article class="card" data-category="study-tips">
+            <span class="tag tag-blue">Study Tips</span>
+            <h3>How to Survive Midterm Week at ABAC</h3>
+            <p class="card-meta">Nov 12, 2025 · Contributor</p>
+            <p class="card-text">
+              A 5-step strategy for balancing projects, quizzes, and exams.
+            </p>
+            <a href="article.html" class="link-arrow">Read more →</a>
+          </article>
+
+          <article class="card" data-category="life">
+            <span class="tag tag-green">Life</span>
+            <h3>Top Study Spots Around Huamark Campus</h3>
+            <p class="card-meta">Nov 15, 2025 · Contributor</p>
+            <p class="card-text">
+              Campus corners and nearby cafés that students actually use.
+            </p>
+            <a href="article.html" class="link-arrow">Read more →</a>
+          </article>
+
+          <article class="card" data-category="opportunities">
+            <span class="tag tag-purple">Opportunities</span>
+            <h3>Part-time Jobs & Internships</h3>
+            <p class="card-meta">Nov 10, 2025 · Career Center</p>
+            <p class="card-text">
+              Jobs that match ABAC class schedules and popular majors.
+            </p>
+            <a href="article.html" class="link-arrow">Read more →</a>
+          </article>
+        </div>
+
+        <div class="pagination">
+          <button class="btn btn-outline" disabled>« Prev</button>
+          <button class="btn btn-outline btn-active">1</button>
+          <button class="btn btn-outline">2</button>
+          <button class="btn btn-outline">Next »</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2025 ABAC Hub.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

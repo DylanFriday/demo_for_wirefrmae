@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ABAC Hub – Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <a href="index.html" class="logo">ABAC Hub</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="sheets.html">Study Sheets</a>
+          <a href="dorms.html">Dorms</a>
+          <a href="about.html">About</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section section-full-height">
+      <div class="container auth-layout">
+        <div class="auth-card">
+          <h1>Login to ABAC Hub</h1>
+          <p class="muted">
+            Authentication is not implemented in this prototype. This screen
+            shows the future UI.
+          </p>
+
+          <form class="auth-form">
+            <label for="email" class="form-label">ABAC Email</label>
+            <input
+              id="email"
+              type="email"
+              class="input"
+              placeholder="your.id@student.au.edu"
+            />
+
+            <label for="password" class="form-label">Password</label>
+            <input
+              id="password"
+              type="password"
+              class="input"
+              placeholder="••••••••"
+            />
+
+            <button type="button" class="btn btn-primary" disabled>
+              Login (demo only)
+            </button>
+          </form>
+
+          <p class="auth-footer">
+            Don’t have an account?
+            <a href="#">Sign up (future feature)</a>
+          </p>
+        </div>
+
+        <div class="auth-side">
+          <h2>Why create an account?</h2>
+          <ul class="list">
+            <li>Write course and teacher reviews.</li>
+            <li>Save your favourite articles.</li>
+            <li>Access future tools like GPA calculator and planner.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2025 ABAC Hub.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

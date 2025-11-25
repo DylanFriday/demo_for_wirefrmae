@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ABAC Hub – Reviews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <a href="index.html" class="logo">ABAC Hub</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="sheets.html">Study Sheets</a>
+          <a href="dorms.html">Dorms</a>
+          <a href="about.html">About</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <h1>Course & Teacher Reviews</h1>
+            <p>See what other students say before you register.</p>
+          </div>
+          <div class="page-actions">
+            <select id="reviewTypeFilter" class="select">
+              <option value="all">All</option>
+              <option value="course">Courses only</option>
+              <option value="teacher">Teachers only</option>
+            </select>
+            <input
+              type="search"
+              class="input"
+              id="reviewSearch"
+              placeholder="Search by code or name..."
+            />
+          </div>
+        </div>
+
+        <div class="card-list" id="reviewList">
+          <article
+            class="card card-horizontal"
+            data-type="course"
+            data-labels="msm1131 business statistics"
+          >
+            <div class="card-main">
+              <span class="tag tag-blue">Course</span>
+              <h3>MSM 1131 – Business Statistics</h3>
+              <p class="card-meta">Faculty of MSM · 3 credits</p>
+              <p class="card-text">
+                A foundation course covering probability, distributions, and
+                data analysis. Heavy on formulas but very useful for
+                data-related careers.
+              </p>
+            </div>
+            <div class="card-aside">
+              <div class="rating">
+                <div class="rating-value">4.3</div>
+                <div class="rating-stars">★★★★☆</div>
+                <div class="rating-count">12 reviews</div>
+              </div>
+              <a href="course.html" class="btn btn-outline-small"
+                >View details</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="card card-horizontal"
+            data-type="teacher"
+            data-labels="john smith msm"
+          >
+            <div class="card-main">
+              <span class="tag tag-purple">Teacher</span>
+              <h3>Dr. John Smith</h3>
+              <p class="card-meta">Faculty of MSM · Statistics</p>
+              <p class="card-text">
+                Known for clear explanations and fair exams. Weekly quizzes but
+                typically similar to lecture examples.
+              </p>
+            </div>
+            <div class="card-aside">
+              <div class="rating">
+                <div class="rating-value">4.5</div>
+                <div class="rating-stars">★★★★★</div>
+                <div class="rating-count">18 reviews</div>
+              </div>
+              <a href="course.html" class="btn btn-outline-small"
+                >View details</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="card card-horizontal"
+            data-type="course"
+            data-labels="csc1100 programming"
+          >
+            <div class="card-main">
+              <span class="tag tag-blue">Course</span>
+              <h3>CSC 1100 – Introduction to Programming</h3>
+              <p class="card-meta">Faculty of SCI · 3 credits</p>
+              <p class="card-text">
+                First programming subject using Python. Labs every week, project
+                at the end of the semester.
+              </p>
+            </div>
+            <div class="card-aside">
+              <div class="rating">
+                <div class="rating-value">3.8</div>
+                <div class="rating-stars">★★★☆☆</div>
+                <div class="rating-count">21 reviews</div>
+              </div>
+              <a href="course.html" class="btn btn-outline-small"
+                >View details</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="info-box">
+          <strong>Note:</strong> In this prototype, reviews are sample data
+          only. In a real system, students would log in and submit their own
+          ratings and comments.
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2025 ABAC Hub.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

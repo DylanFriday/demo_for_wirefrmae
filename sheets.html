@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ABAC Hub – Study Sheets Marketplace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <a href="index.html" class="logo">ABAC Hub</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="sheets.html" class="active">Study Sheets</a>
+          <a href="dorms.html">Dorms</a>
+          <a href="about.html">About</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <h1>Study Sheets Marketplace</h1>
+            <p>
+              Summary notes, exam cheatsheets, and past-paper guides made by
+              students.
+            </p>
+          </div>
+          <div class="page-actions page-actions-stack">
+            <input
+              type="search"
+              id="sheetSearch"
+              class="input"
+              placeholder="Search by subject, course code, or keyword..."
+            />
+            <div class="sheet-filter-row">
+              <select id="sheetSubjectFilter" class="select">
+                <option value="all">All subjects</option>
+                <option value="stats">Statistics</option>
+                <option value="programming">Programming</option>
+                <option value="marketing">Marketing</option>
+                <option value="ethics">Ethics</option>
+              </select>
+              <select id="sheetPriceFilter" class="select">
+                <option value="all">Free & paid</option>
+                <option value="free">Free only</option>
+                <option value="paid">Paid only</option>
+              </select>
+              <select id="sheetSemesterFilter" class="select">
+                <option value="all">Any semester</option>
+                <option value="1-2025">1/2025</option>
+                <option value="2-2024">2/2024</option>
+                <option value="1-2024">1/2024</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-grid" id="sheetList">
+          <!-- Sheet 1 -->
+          <article
+            class="card sheet-card"
+            data-subject="stats"
+            data-price="paid"
+            data-semester="1-2025"
+            data-labels="msm 1131 business statistics midterm final formula summary"
+          >
+            <div class="sheet-ribbon sheet-ribbon-paid">Paid</div>
+            <h3>MSM 1131 Business Statistics – Midterm Formula Sheet</h3>
+            <p class="card-meta">
+              Course: MSM 1131 · Semester 1/2025 · File: PDF (8 pages)
+            </p>
+            <p class="card-text">
+              One-page-per-topic summary of all key formulas and examples for
+              descriptive statistics, probability, and distributions.
+            </p>
+            <div class="sheet-meta-row">
+              <span class="pill pill-green">120 THB</span>
+              <span class="pill pill-soft">Exam-focused</span>
+            </div>
+            <div class="sheet-tags">
+              <span class="tag tag-blue">Formulas</span>
+              <span class="tag tag-blue">Midterm</span>
+              <span class="tag tag-blue">Cheatsheet style</span>
+            </div>
+            <a
+              href="/sheet-detail.html"
+              class="btn btn-outline-small sheet-btn"
+            >
+              View details
+            </a>
+          </article>
+
+          <!-- Sheet 2 -->
+          <article
+            class="card sheet-card"
+            data-subject="programming"
+            data-price="free"
+            data-semester="2-2024"
+            data-labels="csc 1100 intro programming python basics loops functions"
+          >
+            <div class="sheet-ribbon sheet-ribbon-free">Free</div>
+            <h3>CSC 1100 – Intro to Programming (Python) Quick Notes</h3>
+            <p class="card-meta">
+              Course: CSC 1100 · Semester 2/2024 · File: Google Docs link
+            </p>
+            <p class="card-text">
+              Topic-by-topic summary with code snippets for variables, loops,
+              functions, lists, and dictionaries.
+            </p>
+            <div class="sheet-meta-row">
+              <span class="pill pill-green">Free</span>
+              <span class="pill pill-soft">Good for revision</span>
+            </div>
+            <div class="sheet-tags">
+              <span class="tag tag-blue">Python</span>
+              <span class="tag tag-blue">Code examples</span>
+            </div>
+            <a href="sheet-detail.html" class="btn btn-outline-small sheet-btn">
+              View details
+            </a>
+          </article>
+
+          <!-- Sheet 3 -->
+          <article
+            class="card sheet-card"
+            data-subject="marketing"
+            data-price="paid"
+            data-semester="2-2024"
+            data-labels="mkt 1101 principles of marketing final exam concept map"
+          >
+            <div class="sheet-ribbon sheet-ribbon-paid">Paid</div>
+            <h3>MKT 1101 – Principles of Marketing Final Exam Pack</h3>
+            <p class="card-meta">
+              Course: MKT 1101 · Semester 2/2024 · File: PDF (15 pages)
+            </p>
+            <p class="card-text">
+              Concept maps + sample MCQs with short answers covering 4Ps, STP,
+              consumer behaviour, and branding.
+            </p>
+            <div class="sheet-meta-row">
+              <span class="pill pill-green">150 THB</span>
+              <span class="pill pill-soft">Final exam</span>
+            </div>
+            <div class="sheet-tags">
+              <span class="tag tag-blue">Concept map</span>
+              <span class="tag tag-blue">MCQs</span>
+            </div>
+            <a href="sheet-detail.html" class="btn btn-outline-small sheet-btn">
+              View details
+            </a>
+          </article>
+
+          <!-- Sheet 4 -->
+          <article
+            class="card sheet-card"
+            data-subject="ethics"
+            data-price="free"
+            data-semester="1-2024"
+            data-labels="ethics moral theories case study summary essay outline"
+          >
+            <div class="sheet-ribbon sheet-ribbon-free">Free</div>
+            <h3>Ethics – Moral Theories & Case Study Outline</h3>
+            <p class="card-meta">
+              General Education · Semester 1/2024 · File: PDF (6 pages)
+            </p>
+            <p class="card-text">
+              Short explanation of utilitarianism, deontology, virtue ethics,
+              plus ready-made essay structures for case questions.
+            </p>
+            <div class="sheet-meta-row">
+              <span class="pill pill-green">Free</span>
+              <span class="pill pill-soft">Essay helper</span>
+            </div>
+            <div class="sheet-tags">
+              <span class="tag tag-blue">Essay</span>
+              <span class="tag tag-blue">Case study</span>
+            </div>
+            <a
+              href="/sheet-detail.html"
+              class="btn btn-outline-small sheet-btn"
+            >
+              View details
+            </a>
+          </article>
+        </div>
+
+        <div class="info-box">
+          <strong>Note:</strong> This is a frontend-only demo. In a full
+          version, buyers would log in, pay securely, and then receive a
+          download link or Google Drive access. Sellers would upload files and
+          set prices.
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2025 ABAC Hub.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

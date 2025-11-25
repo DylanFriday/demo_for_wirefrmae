@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ABAC Hub – Dorms near ABAC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <a href="index.html" class="logo">ABAC Hub</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="sheets.html">Study Sheets</a>
+          <a href="dorms.html">Dorms</a>
+          <a href="about.html">About</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <h1>Dorms near ABAC</h1>
+            <p>
+              Browse popular dormitories around campus with price, distance, and
+              facilities.
+            </p>
+          </div>
+          <div class="page-actions page-actions-stack">
+            <input
+              type="search"
+              id="dormSearch"
+              class="input"
+              placeholder="Search by dorm name or location..."
+            />
+            <div class="dorm-filter-row">
+              <select id="dormDistanceFilter" class="select">
+                <option value="all">Any distance</option>
+                <option value="1">≤ 1 km</option>
+                <option value="2">≤ 2 km</option>
+                <option value="3">≤ 3 km</option>
+              </select>
+              <select id="dormPriceFilter" class="select">
+                <option value="all">Any price</option>
+                <option value="0-5000">Up to 5,000 THB</option>
+                <option value="5000-8000">5,000 – 8,000 THB</option>
+                <option value="8000-999999">8,000+ THB</option>
+              </select>
+              <select id="dormTypeFilter" class="select">
+                <option value="all">All types</option>
+                <option value="mixed">Mixed</option>
+                <option value="female">Female only</option>
+                <option value="male">Male only</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-grid" id="dormList">
+          <!-- Dorm 1 -->
+          <article
+            class="card dorm-card"
+            data-distance="0.8"
+            data-minprice="6500"
+            data-maxprice="9000"
+            data-type="mixed"
+            data-labels="park view residence hua mak mixed"
+          >
+            <div class="dorm-image-placeholder">Photo</div>
+            <h3>Park View Residence</h3>
+            <p class="card-meta">Hua Mak · Approx. 0.8 km from ABAC</p>
+            <p class="card-text">
+              Modern rooms with air-con, Wi-Fi, keycard, and 24/7 security.
+              Popular with ABAC students.
+            </p>
+            <div class="dorm-meta-row">
+              <span class="pill pill-green">From 6,500 THB / month</span>
+              <span class="pill pill-soft">Mixed</span>
+            </div>
+            <div class="dorm-tags">
+              <span class="tag tag-blue">Wi-Fi</span>
+              <span class="tag tag-blue">Air-con</span>
+              <span class="tag tag-blue">Security</span>
+            </div>
+            <a href="/dorm-detail.html" class="btn btn-outline-small dorm-btn"
+              >View details</a
+            >
+          </article>
+
+          <!-- Dorm 2 -->
+          <article
+            class="card dorm-card"
+            data-distance="1.5"
+            data-minprice="5000"
+            data-maxprice="6500"
+            data-type="female"
+            data-labels="green garden lady dorm ramkhamhaeng female only"
+          >
+            <div class="dorm-image-placeholder">Photo</div>
+            <h3>Green Garden Lady Dorm</h3>
+            <p class="card-meta">
+              Ramkhamhaeng Soi XX · Approx. 1.5 km from ABAC
+            </p>
+            <p class="card-text">
+              Female-only dorm with quiet environment, laundry, and common study
+              area.
+            </p>
+            <div class="dorm-meta-row">
+              <span class="pill pill-green">From 5,000 THB / month</span>
+              <span class="pill pill-soft">Female only</span>
+            </div>
+            <div class="dorm-tags">
+              <span class="tag tag-blue">Wi-Fi</span>
+              <span class="tag tag-blue">Laundry</span>
+              <span class="tag tag-blue">Study room</span>
+            </div>
+            <a href="dorm-detail.html" class="btn btn-outline-small dorm-btn"
+              >View details</a
+            >
+          </article>
+
+          <!-- Dorm 3 -->
+          <article
+            class="card dorm-card"
+            data-distance="2.3"
+            data-minprice="4000"
+            data-maxprice="5500"
+            data-type="male"
+            data-labels="city tower mens dorm bangkapi male"
+          >
+            <div class="dorm-image-placeholder">Photo</div>
+            <h3>City Tower Men’s Dorm</h3>
+            <p class="card-meta">Bang Kapi · Approx. 2.3 km from ABAC</p>
+            <p class="card-text">
+              Budget-friendly men’s dorm with simple rooms, parking, and easy
+              access to main roads.
+            </p>
+            <div class="dorm-meta-row">
+              <span class="pill pill-green">From 4,000 THB / month</span>
+              <span class="pill pill-soft">Male only</span>
+            </div>
+            <div class="dorm-tags">
+              <span class="tag tag-blue">Parking</span>
+              <span class="tag tag-blue">Security</span>
+            </div>
+            <a href="dorm-detail.html" class="btn btn-outline-small dorm-btn"
+              >View details</a
+            >
+          </article>
+
+          <!-- Dorm 4 -->
+          <article
+            class="card dorm-card"
+            data-distance="0.4"
+            data-minprice="9000"
+            data-maxprice="12000"
+            data-type="mixed"
+            data-labels="elite condo hua mak premium mixed"
+          >
+            <div class="dorm-image-placeholder">Photo</div>
+            <h3>Elite Condo Hua Mak</h3>
+            <p class="card-meta">Hua Mak · Approx. 0.4 km from ABAC</p>
+            <p class="card-text">
+              Condominium-style living with gym, pool, and lobby. Higher price
+              but walkable to campus.
+            </p>
+            <div class="dorm-meta-row">
+              <span class="pill pill-green">From 9,000 THB / month</span>
+              <span class="pill pill-soft">Mixed</span>
+            </div>
+            <div class="dorm-tags">
+              <span class="tag tag-blue">Gym</span>
+              <span class="tag tag-blue">Pool</span>
+              <span class="tag tag-blue">Keycard</span>
+            </div>
+            <a href="dorm-detail.html" class="btn btn-outline-small dorm-btn"
+              >View details</a
+            >
+          </article>
+        </div>
+
+        <div class="info-box">
+          <strong>Note:</strong> All data in this demo is sample only. In a real
+          system, price, photos, and contact info would come from a backend
+          database.
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2025 ABAC Hub.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
